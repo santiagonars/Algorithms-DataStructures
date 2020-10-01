@@ -12,6 +12,8 @@ Example 2:
 Input: [2, 3, 4, 1, 5], k=2 
 Output: 7
 Explanation: Subarray with maximum sum is [3, 4]. """
+# NOTE: Time complexity => O(N)
+# NOTE: Space complexity => O(1)
 
 def max_sub_array_of_size_k(k, arr):
     #Find the maximum sum of any continious subarray
