@@ -17,8 +17,9 @@ Example 3:
 Input: [3, 4, 1, 1, 6], S=8 
 Output: 3
 Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 4, 1] or [1, 1, 6]. """
-# NOTE: Time complexity => 
-# NOTE: Space complexity => 
+# NOTE: Time complexity => O(N) => it is actually O(N+N) which is asymptotically equivalent to O(N)
+# NOTE: Space complexity => O(1)
+
 import math
 
 def smallest_subarray_with_given_sum(s, arr):
@@ -30,8 +31,8 @@ def smallest_subarray_with_given_sum(s, arr):
         window_sum += arr[window_end_index] # add the next element
         # make window smaller until 'window_sum' is smaller than s
         while window_sum >= s:
-            min_length = min(min_length, window_end_index - window_start_index + 1) # needed to ad 1 because they index started at 0
-            window_sum -= arr[window_start_index] # remove the 
+            min_length = min(min_length, window_end_index - window_start_index + 1) # needed to add 1 because index started at 0
+            window_sum -= arr[window_start_index]
             window_start_index += 1
     if min_length == math.inf:
         return 0
