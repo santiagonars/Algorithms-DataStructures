@@ -16,7 +16,7 @@ Explanation: Subarray with maximum sum is [3, 4]. """
 # NOTE: Space complexity => O(1)
 
 def max_sub_array_of_size_k(k, arr):
-    #Find the maximum sum of any continious subarray
+    #Find the maximum sum of any continuous subarray
     #define the number that will become the maximum value
     maxValue = 0
     totalSum = 0

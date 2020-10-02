@@ -18,6 +18,7 @@ Input: [3, 4, 1, 1, 6], S=8
 Output: 3
 Explanation: Smallest subarrays with a sum greater than or equal to '8' are [3, 4, 1] or [1, 1, 6]. """
 # NOTE: Time complexity => O(N) => it is actually O(N+N) which is asymptotically equivalent to O(N)
+#                          The outer for loop runs for all elements and the inner while loop processes each element only once.
 # NOTE: Space complexity => O(1)
 
 import math
