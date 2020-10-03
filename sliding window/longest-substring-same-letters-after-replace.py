@@ -21,10 +21,10 @@ Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating subst
 
 
 def length_of_longest_substring(string, k):
-    max_length = 0 # 1, 2
+    max_length = 0 
     window_start = 0
     max_repeat_letter_count = 0 
-    letter_frequency_map = {} # {a: 0, b: 0, c: 1, d: 1, e: 1}
+    letter_frequency_map = {} 
     
     for window_end in range(len(string)): 
         right_char = string[window_end] # get next character and add to dictionary
