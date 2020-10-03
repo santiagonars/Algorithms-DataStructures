@@ -23,7 +23,7 @@ Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating subst
 def length_of_longest_substring(string, k):
     max_length = 0 
     window_start = 0
-    max_repeat_letter_count = 0 
+    highest_repeat_letter_count = 0 
     letter_frequency_map = {} 
     
     for window_end in range(len(string)): 
@@ -31,11 +31,11 @@ def length_of_longest_substring(string, k):
         if right_char not in letter_frequency_map:
             letter_frequency_map[right_char] = 0
         letter_frequency_map[right_char] += 1
-        # get letter count of the letter of each iteration to suntract from window size
-        max_repeat_letter_count = max(max_repeat_letter_count, letter_frequency_map[right_char])
+        # get letter count of the letter with the highest repeat count inside window
+        highest_repeat_letter_count = max(highest_repeat_letter_count, letter_frequency_map[right_char])
         # window size cannot have more than k letters after subtracting 'max_repeat_letter_count' of the letter of each iteration
         # ^if so, make window size smaller
-        if (window_end - window_start + 1 - max_repeat_letter_count)  > k:
+        if (window_end - window_start + 1 - highest_repeat_letter_count)  > k:
             left_char = string[window_start]
             letter_frequency_map[left_char] -= 1
             window_start += 1 
