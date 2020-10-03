@@ -11,8 +11,8 @@ Example 2:
 Input: Array=[0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1], k=3
 Output: 9
 Explanation: Replace the '0' at index 6, 9, and 10 to have the longest contiguous subarray of 1s having length 9. """
-# NOTE: Time complexity => 
-# NOTE: Space complexity =>
+# NOTE: Time complexity => O(N) => N is the count number of 1
+# NOTE: Space complexity => O(1) => constant space because it only stores variables
 
 def length_of_longest_subarray(arr, k):
     max_length = 0
