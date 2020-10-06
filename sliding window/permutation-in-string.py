@@ -52,9 +52,10 @@ def find_permutation(string, pattern):
             char_frequency[right_char] -= 1   
             if char_frequency[right_char] == 0:
                 matched += 1
-    
+
         if matched == len(char_frequency):
             return True
+            
         # start sliding window once it matches the size of the pattern
         if window_end >= len(pattern) - 1:
             left_char = string[window_start]
