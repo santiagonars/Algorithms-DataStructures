@@ -31,7 +31,7 @@ def longest_substring_with_k_distinct(string, k):
         if right_char not in char_frequency:
             char_frequency[right_char] = 0
         char_frequency[right_char] += 1
-        # Once the number of distict charaters in the hashmap ios greater than K, reduce it by
+        # Once the number of distict charaters in the hashmap is greater than K, reduce it by
         # shrinking window until there are k distict characters in the 'char_frequency'
         while len(char_frequency) > k:
             left_char = string[window_start] # get character from left end and remove it from hashmap
