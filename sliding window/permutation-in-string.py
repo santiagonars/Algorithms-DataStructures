@@ -8,7 +8,7 @@ For example, “abc” has the following six permutations:
 4. bca
 5. cab
 6. cba
-*******>>>> If a string has ‘n’ distinct characters it will have n! permutations.
+>>> If a string has ‘n’ distinct characters it will have n! permutations.
 
 Example 1:
 Input: String="oidbcaf", Pattern="abc"
@@ -29,12 +29,12 @@ Example 4:
 Input: String="aaacb", Pattern="abc"
 Output: true
 Explanation: The string contains "acb" which is a permutation of the given pattern. """
-# NOTE: Time complexity => 
-# NOTE: Space complexity =>
+# NOTE: Time complexity => O(N + M) => N and M are the number of characters in the input string and pattern
+# NOTE: Space complexity => O(M) => as the number of distinct characters of the pattern that gets added in the hashmap 
 from math import factorial
 
 def find_permutation(string, pattern):
-    # print(factorial(len(pattern))) # number of permutations in 'pattern'
+    # print(factorial(len(pattern))) # number of permutations in 'pattern' is found by the factorial of its length
     window_start = 0
     matched = 0
     char_frequency = {}
@@ -55,17 +55,17 @@ def find_permutation(string, pattern):
 
         if matched == len(char_frequency):
             return True
-            
-        # start sliding window once it matches the size of the pattern
+
+        # start sliding window by one character once the size of window matches the number of characters in pattern
         if window_end >= len(pattern) - 1:
             left_char = string[window_start]
             window_start += 1
-            # check if character that is going to leave window was present in 'char_frequency'
+            # Was it inside the sliding window? - check if character that is going to leave the window is in 'char_frequency'
             if left_char in char_frequency:
-                # if the value of a character in 'char_frequency' is equal to 0, and matched was increase, we need to decrease it again.
+                # if the value of a character in 'char_frequency' is 0, and matched was increase, so we need to decrease matched again.
                 if char_frequency[left_char] == 0:
                     matched -= 1
-                # account of character that is about to leave window back in 'char_frequency'
+                # account for the character that is about to leave window back in 'char_frequency'
                 char_frequency[left_char] += 1
     return False
 
