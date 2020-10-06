@@ -1,4 +1,5 @@
-""" ----------String Anagrams (hard)----------
+""" ----------Problem Challenge 2----------
+>>> ----------String Anagrams (hard)----------
 Given a string and a pattern, find all anagrams of the pattern in the given string.
 
 Anagram is actually a Permutation of a string. For example, “abc” has the following six anagrams:
