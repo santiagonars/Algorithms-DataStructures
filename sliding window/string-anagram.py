@@ -71,6 +71,7 @@ def find_string_anagrams(string, pattern):
                 char_frequency[left_char] += 1
     return return_indexes
 
+
 if __name__ == "__main__":
     string_test = "ppqp"
     pattern = "pq"
