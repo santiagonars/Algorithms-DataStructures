@@ -17,9 +17,9 @@ Example 3:
 Input: String="adcad", Pattern="abc"
 Output: ""
 Explanation: No substring in the given string has all characters of the pattern. """
-# NOTE: Time complexity => 
-# NOTE: Space complexity => 
-
+# NOTE: Time complexity => O(N + M) => where N and M are the number of characters in 'string' and 'pattern'
+# NOTE: Space complexity => O(M) => worse case scenario for the number of unique characters in 'pattern'
+#                           O(N) => worse case scenario for the output substring
 
 def find_substring(string, pattern):
     min_length = len(string) + 1
