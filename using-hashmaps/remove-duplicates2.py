@@ -16,7 +16,7 @@ It doesn't matter what values are set beyond the returned length. """
 # NOTE: Time complexity => O(N)
 
 def removeDuplicates(nums):
-    # ALTERNATE: only the 2 lines below and seems faster in practice
+    # ALTERNATE: only the 2 lines below and seems faster in practice but it isnt
     # s = set(nums)
     # nums[:] = sorted(s)
 
