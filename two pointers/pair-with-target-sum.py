@@ -34,7 +34,7 @@ def pair_with_targetsum1(arr, target_sum):
     return [-1, -1]
 
 # ALTERNATIVE approach using a HASHMAP
-"""  # Search for ‘Y’ (which is equivalent to “Target - XTarget−X”) in the HashTable. 
+"""  # Search for ‘Y’ (which is equivalent to “Target - X”) in the HashTable. 
     # -> If it is there, we have found the required pair.
     # Otherwise, insert “X” in the HashTable, so that we can search it for the later numbers. """
 def pair_with_targetsum2(arr, target_sum):
