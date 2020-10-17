@@ -1,4 +1,4 @@
-""" Triplet Sum to Zero (medium)
+""" ----------Triplet Sum to Zero (medium)----------
 Problem Statement:
 >>> Given an array of unsorted numbers, find all unique triplets in it that add up to zero.
 
@@ -16,13 +16,6 @@ Explanation: There are two unique triplets whose sum is equal to zero. """
 #                                 => sorting + searchTriplets() = O(N*logN + N^2) which is considered O(N^2)
 # NOTE: Space complexity => O(N) => spaced required for sorting. 
 
-# NOTE: If X + Y + Z == 0, then X + Z == -Y. Knowing this, we can find a a pair for X and Y that equal negative Z, a target sum.
-#       -> We need to compare the sum of all pairs that equal the target sum  by pointing to each end of the array
-#       -> If the target sum is greater, then increase the index value of the left end of the array
-#       -> If the target sum is lower, then decrease the index value of the right end of the array 
-#       -> If target sum is equal, then we have a match for 3 value that equal 0 [target_sum, left_pointer_arr, right_pointer_arr]
-#           -> Also as long as each left & right pointer is the same value that the it's respective previous one in the array, 
-#               sliding the pointers by either incrementing the left or decrementing right pointers (hence do for each one)
 
 def search_triplets(arr):
     arr.sort() # need to sort the array to skip duplicates
@@ -59,3 +52,13 @@ if __name__ == "__main__":
     print(search_triplets(array_test)) # expected output = [-3, 1, 2], [-2, 0, 2], [-2, 1, 1], [-1, 0, 1]
     array_test = [-5, 2, -1, -2, 3]
     print(search_triplets(array_test)) # expected output = [[-5, 2, 3], [-2, -1, 3]]
+
+
+# NOTE: If X + Y + Z == 0, then X + Z == -Y. Knowing this, we can find a a pair for X and Y that equal negative Z, a target sum.
+#       -> We need to compare the sum of all pairs that equal the target sum  by pointing to each end of the array
+#       -> If the target sum is greater, then increase the index value of the left end of the array
+#       -> If the target sum is lower, then decrease the index value of the right end of the array 
+#       -> If target sum is equal, then we have a match for 3 value that equal 0 [target_sum, left_pointer_arr, right_pointer_arr]
+#           -> Also as long as each left & right pointer is the same value that the it's respective previous one in the array, 
+#               sliding the pointers by either incrementing the left or decrementing right pointers (hence do for each one)
+# REMEMBER: Duplicates matter because triplets have to be unique!
