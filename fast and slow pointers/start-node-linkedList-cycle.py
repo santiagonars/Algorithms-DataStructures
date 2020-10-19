@@ -66,12 +66,12 @@ def main():
     head.next.next.next.next.next = Node(6)
 
     head.next.next.next.next.next.next = head.next.next
-    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value)) # expected output = 3
 
     head.next.next.next.next.next.next = head.next.next.next
-    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value)) # expected output = 4
 
     head.next.next.next.next.next.next = head
-    print("LinkedList cycle start: " + str(find_cycle_start(head).value))
+    print("LinkedList cycle start: " + str(find_cycle_start(head).value)) # expected output = 1
 
 main()

@@ -58,15 +58,15 @@ def main():
     head.next.next.next = Node(4)
     head.next.next.next.next = Node(5)
     head.next.next.next.next.next = Node(6)
-    print("LinkedList has cycle: " + str(has_cycle(head)))
+    print("LinkedList has cycle: " + str(has_cycle(head)) + '\n') # expected output = False
 
     head.next.next.next.next.next.next = head.next.next
-    print("LinkedList has cycle: " + str(has_cycle(head)))
-    print("LinkedList cycle length: " + str(find_cycle_length(head)))
+    print("LinkedList has cycle: " + str(has_cycle(head))) # expected output = True
+    print("LinkedList cycle length: " + str(find_cycle_length(head))) # expected output = 4
 
     head.next.next.next.next.next.next = head.next.next.next
-    print("LinkedList has cycle: " + str(has_cycle(head)))
-    print("LinkedList cycle length: " + str(find_cycle_length(head)))
+    print("LinkedList has cycle: " + str(has_cycle(head))) # expected output = True
+    print("LinkedList cycle length: " + str(find_cycle_length(head))) # expected output = 3
     
 
 main()

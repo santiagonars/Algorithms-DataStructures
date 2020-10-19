@@ -50,8 +50,8 @@ def find_square_sum(num):
 
 
 def main():
-    print(find_happy_number(23))
-    print(find_happy_number(12))
+    print(find_happy_number(23)) # expected output = True
+    print(find_happy_number(12)) # expected output = False
 
 
 main()
