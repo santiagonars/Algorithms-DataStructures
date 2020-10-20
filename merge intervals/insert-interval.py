@@ -58,7 +58,7 @@ def main():
 
 main()
 
-# NOTE: Interval list is sorted so a better solution than using than the merged intervals solution which gave O(N*logN) can be used.
+# NOTE: Interval list is *SORTED* so a better solution than using than the merged intervals solution which gave O(N*logN) can be used.
 #
 # 1) Skip all intervals which end before the start of the new interval, i.e., skip all intervals with the following condition:
 #       =>       intervals[i].end < newInterval.start
