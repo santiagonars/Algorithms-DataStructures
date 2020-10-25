@@ -23,8 +23,8 @@ Solution: While doing the cyclic sort, we realized that the array will have a cy
 and that the start of the cycle will always point to the duplicate number. 
 This means that we can use the fast & the slow pointer method to find the duplicate number 
 or the start of the cycle similar to Start of LinkedList Cycle. """
-# NOTE: Time complexity => O(N)
-# NOTE: Space complexity => O(1) but modifies input array
+# NOTE: Time complexity => O(N), for both solutions
+# NOTE: Space complexity => O(1) but modifies input array. The 2nd solution doesn't modify the input array.
 
 
 def find_duplicate(nums):
