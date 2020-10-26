@@ -1,8 +1,32 @@
 """ ----------Reverse a Sub-list (medium)----------
 Problem Statement #
 >>> Given the head of a LinkedList and two positions ‘p’ and ‘q’, 
-reverse the LinkedList from position ‘p’ to ‘q’. """
+reverse the LinkedList from position ‘p’ to ‘q’. 
 
+---------------------Similar Questions #---------------------
+Problem 1: Reverse the first ‘k’ elements of a given LinkedList.
+
+>>> Solution: This problem can be easily converted to our parent problem; 
+to reverse the first ‘k’ nodes of the list, we need to pass p=1 and q=k.
+----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----
+Problem 2: Given a LinkedList with ‘n’ nodes, reverse it based on its size in the following way:
+    
+    1.) If ‘n’ is even, reverse the list in a group of n/2 nodes.
+    2.) If n is odd, keep the middle node as it is, reverse the first ‘n/2’ nodes and reverse the last ‘n/2’ nodes.
+
+>>> Solution: When ‘n’ is even we can perform the following steps:
+
+    1.) Reverse first ‘n/2’ nodes: head = reverse(head, 1, n/2)
+    2.) Reverse last ‘n/2’ nodes: head = reverse(head, n/2 + 1, n)
+    
+When ‘n’ is odd, our algorithm will look like:
+
+    1.) head = reverse(head, 1, n/2)
+    2.) head = reverse(head, n/2 + 2, n)
+
+Please note the function call in the second step. We’re skipping two elements as we will be skipping the middle element. """
+# NOTE: Time complexity => O(N) w,here ‘N’ is the total number of nodes in the LinkedList
+# NOTE: Space complexity => O(1) ,since we only used constant space 
 
 class Node:
     def __init__(self, value, next=None):
@@ -29,7 +53,6 @@ def reverse_sub_list(head, p, q):
         current = current.next 
         i += 1
     
-    print(current.value)
     # we are interested in three parts of the LinkedList,
     # - the part before index 'p' => previous
     # - the part between 'p' and 'q' 
