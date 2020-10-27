@@ -3,18 +3,20 @@ Problem Statement #
 >>> Given the head of a LinkedList and two positions ‘p’ and ‘q’, 
 reverse the LinkedList from position ‘p’ to ‘q’. 
 
----------------------Similar Questions #---------------------
-Problem 1: Reverse the first ‘k’ elements of a given LinkedList.
+------------------Similar Questions #---------------------------------------------------------------
+TODO Problem 1: Reverse the first ‘k’ elements of a given LinkedList.
 
->>> Solution: This problem can be easily converted to our parent problem; 
+>>> Solution: 
+This problem can be easily converted to our parent problem; 
 to reverse the first ‘k’ nodes of the list, we need to pass p=1 and q=k.
 ----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----    ----
-Problem 2: Given a LinkedList with ‘n’ nodes, reverse it based on its size in the following way:
+TODO Problem 2: Given a LinkedList with ‘n’ nodes, reverse it based on its size in the following way:
     
-    1.) If ‘n’ is even, reverse the list in a group of n/2 nodes.
+    1.) If ‘n’ is even, reverse the list in a group of n/2 nsodes.
     2.) If n is odd, keep the middle node as it is, reverse the first ‘n/2’ nodes and reverse the last ‘n/2’ nodes.
 
->>> Solution: When ‘n’ is even we can perform the following steps:
+>>> Solution: 
+When ‘n’ is even we can perform the following steps:
 
     1.) Reverse first ‘n/2’ nodes: head = reverse(head, 1, n/2)
     2.) Reverse last ‘n/2’ nodes: head = reverse(head, n/2 + 1, n)
@@ -53,17 +55,17 @@ def reverse_sub_list(head, p, q):
         current = current.next 
         i += 1
     
-    # we are interested in three parts of the LinkedList,
-    # - the part before index 'p' => previous
+    # we are interested in three parts of the LinkedList:
+    # - before index 'p' (previous)
     # - the part between 'p' and 'q' 
     # - and the part after index 'q' 
     last_node_of_first_part = previous
-    # after reversing the LinkedList 'current' will become the last node of the sub-list
-    last_node_of_sub_list = current
+    # after reversing the LinkedList, 'current' will become the last node of the sub-list
+    last_node_of_reversed_sub_list = current
     next = None # to temporarily store the next node
 
-    # reverse nodes between 'p' and 'q'
     i = 0
+    # reverse nodes between 'p' and 'q'
     while current is not None and i < q - p + 1:
         next = current.next
         current.next = previous
@@ -76,10 +78,10 @@ def reverse_sub_list(head, p, q):
         last_node_of_first_part.next = previous
     # this means p == 1 i.e., we are changing the first node (head) of the LinkedList
     else:
-        head = previous
+        head = previous # this means there is non first part
 
     # connect with the last part
-    last_node_of_sub_list.next = current
+    last_node_of_reversed_sub_list.next = current
     return head
 
 
