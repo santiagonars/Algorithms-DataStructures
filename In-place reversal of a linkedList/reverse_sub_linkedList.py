@@ -27,7 +27,7 @@ When ‘n’ is odd, our algorithm will look like:
     2.) head = reverse(head, n/2 + 2, n)
 
 Please note the function call in the second step. We’re skipping two elements as we will be skipping the middle element. """
-# NOTE: Time complexity => O(N) w,here ‘N’ is the total number of nodes in the LinkedList
+# NOTE: Time complexity => O(N) ,where ‘N’ is the total number of nodes in the LinkedList
 # NOTE: Space complexity => O(1) ,since we only used constant space 
 
 class Node:
