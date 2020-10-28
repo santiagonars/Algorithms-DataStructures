@@ -54,7 +54,7 @@ def find_word_concatenation(string, words):
             if words_seen[word] > word_frequency.get(word, 0): # 'return 0 if key doesn't exist
                 break
             
-            # Store index if all the words are found
+            # Store index if all the words are found (If this point all words have appeared in the string)
             if j + 1 == words_count:
                 result_indices.append(i)
 
@@ -65,9 +65,9 @@ if __name__ == "__main__":
     string_test = "catfoxcat"
     words = ["cat", "fox"]
     print(find_word_concatenation(string_test, words)) # expected output = [0, 3]
-    # string_test = "catcatfoxfox"
-    # words = ["cat", "fox"]
-    # print(find_word_concatenation(string_test, words))  # expected output = [3]
+    string_test = "catcatfoxfox"
+    words = ["cat", "fox"]
+    print(find_word_concatenation(string_test, words))  # expected output = [3]
 
 
 # NOTE: return list starting indices in string of the words concatenated together in any order
