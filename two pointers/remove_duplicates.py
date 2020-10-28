@@ -12,10 +12,10 @@ Example 2:
 Input: [2, 2, 2, 11]
 Output: 2
 Explanation: The first two elements after removing the duplicates will be [2, 11]. """
-# NOTE: Time complexity => O(N) => to loop through the all the numbers in the array
+# NOTE: Time rycomplexity => O(N) => to loop through the all the numbers in the array
 # NOTE: Space complexity => O(1) => cosntant because we only track the index value in the array of next_non_duplicate
 
-# point top 
+
 def remove_duplicates(arr):
     next_non_duplicate = 1
 
@@ -25,12 +25,12 @@ def remove_duplicates(arr):
             arr[next_non_duplicate] = arr[i]
             next_non_duplicate += 1
         i += 1
-    print(arr[:next_non_duplicate])
+    print(arr[:next_non_duplicate]) # this is the array without duplicates
     return next_non_duplicate
 
 
 if __name__ == "__main__":
-    array_test = [2, 3, 3, 3, 6, 9, 9] # REMEMBER it's sorted!
+    array_test = [2, 3, 3, 3, 6, 9, 9] # REMEMBER it's sorted! [2,3,6,9,6,9,9] i = 7 / next_non_duplicate= 4
     print(remove_duplicates(array_test)) # expected output = 4
     array_test = [2, 2, 2, 11]
     print(remove_duplicates(array_test)) # expected output = 2
