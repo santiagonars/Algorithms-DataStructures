@@ -36,7 +36,9 @@ def triplet_sum_close_to_target(arr, target_sum):
             if target_diff == 0:
                 return target_sum - target_diff # returns sum of all numbers
             # handle the smallest sum  
-            if abs(target_diff) < abs(smallest_difference) or (abs(target_diff) == abs(smallest_difference) and target_diff > smallest_difference):
+            if abs(target_diff) < abs(smallest_difference) or \
+                    (abs(target_diff) == abs(smallest_difference) and target_diff > smallest_difference):
+
                 smallest_difference = target_diff
 
             if target_diff > 0:
