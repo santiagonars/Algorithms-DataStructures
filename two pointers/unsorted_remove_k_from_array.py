@@ -21,6 +21,7 @@ def remove_element(arr, key):
         if arr[i] != key:
             arr[nextElement] = arr[i]
             nextElement += 1
+    print(arr[:nextElement])
     return nextElement
 
 
