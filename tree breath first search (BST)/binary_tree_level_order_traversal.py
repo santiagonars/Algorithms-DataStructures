@@ -8,7 +8,7 @@ input: binary tree: 1 -> 2 | 3 -> 4, 5 | 6, 7
 output: [[1],[2,3],[4,5,6,7]]
 
 Example 2:
-input: binary tree: 12 -> 7 | 1 -> 9 | 10, 5
+input: binary tree: 12 -> 7 | 1 -> N, 9 | 10, 5
 output: [[12],[7,1],[9,10,5]] """
 # NOTE: Time complexity => O(N), where ‘N’ is the total number of nodes in the tree. 
 #                       => This is due to the fact that we traverse each node once.
