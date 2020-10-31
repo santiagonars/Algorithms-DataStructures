@@ -8,7 +8,7 @@ input: binary tree: 1 -> 2 | 3 -> 4, 5 | 6, 7
 output: [[4,5,6,7], [2,3], [1]]
 
 Example 2:
-input: binary tree: 12 -> 7 | 1 -> 9 | 10, 5
+input: binary tree: 12 -> 7 | 1 -> N, 9 | 10, 5
 output: [[9,10,5], [7,1], [12]] """
 # NOTE: Time complexity => O(N) ,where 'N' is the number of nodes in the binary tree
 # NOTE: Space complexity => O(N) ,to return the list of nodes of in reverse level-by-level traversal order.
