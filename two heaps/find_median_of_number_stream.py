@@ -17,11 +17,10 @@ Example 1:
 5. findMedian() -> output: 3
 6. insertNum(4)
 7. findMedian() -> output: 3.5 """
-# NOTE: Time complexity => 
-#                       => 
-# NOTE: Space complexity => 
-#                        => 
-import heapq
+# NOTE: Time complexity => O(logN) for insertNum() => bc insertion for a heap is O(logN)
+#                       => O(1) for findMedium() => elements at at the top of the heap
+# NOTE: Space complexity => O(N) for storing all the numbers
+
 from heapq import *
 
 
