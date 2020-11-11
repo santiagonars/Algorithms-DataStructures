@@ -64,8 +64,7 @@ def generate_permutations_recursive(nums, index, currentPermutation, result):
         for i in range(len(currentPermutation)+1):
             newPermutation = list(currentPermutation)
             newPermutation.insert(i, nums[index])
-            generate_permutations_recursive(
-                nums, index + 1, newPermutation, result)
+            generate_permutations_recursive(nums, index + 1, newPermutation, result) # recursive function 
 # --------------------------------------------------------------
 
 def main():
