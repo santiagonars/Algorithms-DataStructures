@@ -24,7 +24,7 @@ Output: 0
 Example 4:
 Input: [10, 6, 4], key = 4
 Output: 2 """
-# NOTE: Time complexity => O(logN) ,since we are redu cing search range by half in every step, where 'N' is total number of elements in array.
+# NOTE: Time complexity => O(logN) ,since we are reducing search range by half in every step, where 'N' is total number of elements in array.
 # NOTE: Time complexity => O(1), since we're only storing index values.
 
 
