@@ -68,4 +68,11 @@ if __name__ == "__main__":
     string_test2 = "abbbb"
     print("Length of the longest substring: ", non_repeat_substring(string_test2)) # expected output = 2
     string_test3 = "abccde"
-    print("Length of the longest substring1: ", non_repeat_substring1(string_test3)) # expected output = 3
+    print("Length of the longest substring1: ", non_repeat_substring(string_test3)) # expected output = 3
+
+    string_test1 = "aabccbb"
+    print("Length of the longest substring (ALT): ", non_repeat_substring1(string_test1)) # expected output = 3
+    string_test2 = "abbbb"
+    print("Length of the longest substring (ALT): ", non_repeat_substring1(string_test2)) # expected output = 2
+    string_test3 = "abccde"
+    print("Length of the longest substring (ALT): ", non_repeat_substring1(string_test3)) # expected output = 3
