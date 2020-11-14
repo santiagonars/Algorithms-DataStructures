@@ -1,6 +1,7 @@
 
 Arrays and Strings: 
     - Longest Substring Without Repeating Characters (Bloomberg)
+    - First Unique Character in a String (Bloomberg)
     - 
 --------------------------------------------------------------------------------------------------------------
 Linked List:
