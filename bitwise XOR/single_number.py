@@ -21,7 +21,7 @@ def find_single_number(arr):
 
 
 def main():
-    arr = [1, 4, 2, 1, 3, 2, 3]
+    arr = [1, 4, 2, 1, 3, 2, 3] # answer = 4
     print(find_single_number(arr))
 
 
