@@ -24,7 +24,7 @@ def find_missing_number(arr):
     # x2 represents XOR of all values in arr;
     x2 = arr[0]
     for i in range(1, n-1): # the input array was n-1 so we need to subtract 1 
-        print('{} ^ {}'.format(x2, i))
+        print('{} ^ {}'.format(x2, arr[i]))
         x2 = x2 ^ arr[i]
         print("x2: ", x2)
     
