@@ -2,20 +2,19 @@
 Arrays and Strings: 
     - Longest Substring Without Repeating Characters (Bloomberg)
     - First Unique Character in a String (Bloomberg)
-    - 
+    - String Compression (Bloomberg)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
-    - 
 --------------------------------------------------------------------------------------------------------------
 Trees and Graphs:
-    - 
+    - Validate Binary Search Tree (Bloomberg)
 --------------------------------------------------------------------------------------------------------------
 Heaps, Queue, Stack:
     - 
 --------------------------------------------------------------------------------------------------------------
 Sorting, and Searching:
-    - 
+    - Sort Characters by Frequency (Bloomberg)
 --------------------------------------------------------------------------------------------------------------
 Dynamic Programming:
     - 
