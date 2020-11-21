@@ -9,6 +9,8 @@ This means that the object with sequence number ‘3’ was created just before 
 ***For simplicity, let’s assume we are passed an integer array containing only the sequence numbers, 
 though each number is actually an object.
 
+NOTE: THIS PROBLEM CAN BE USED FOR MINIMUM SWAP PROBLEM
+
 Example 1:
 Input: [3, 1, 5, 4, 2]
 Output: [1, 2, 3, 4, 5]
