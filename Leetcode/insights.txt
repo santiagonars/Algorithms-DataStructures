@@ -11,7 +11,7 @@ Trees and Graphs:
     - Validate Binary Search Tree (Bloomberg)
 --------------------------------------------------------------------------------------------------------------
 Heaps, Queue, Stack:
-    - 
+    - Meetings rooms 2 (Bloomberg)
 --------------------------------------------------------------------------------------------------------------
 Sorting, and Searching:
     - Sort Characters by Frequency (Bloomberg)
