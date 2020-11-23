@@ -49,7 +49,7 @@ def minMeetingRooms(intervals):
     # Add a new room to the first meeting; add the end time 
     heapq.heappush(free_rooms, intervals[0][1])
 
-    # Ggo through remanining meetins
+    # Go through remanining meetings
     for i in intervals[1:]:
         # if the end time of the room is less than the start time, room is not needed anymore
         if free_rooms[0] <= i[0]: 
