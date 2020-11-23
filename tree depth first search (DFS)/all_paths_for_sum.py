@@ -4,7 +4,7 @@ Problem Statement #
 find all paths from root-to-leaf such that the sum of all the node values of each path equals ‘S’.
 
 Example 1:
-Input: S = 12; 
+Input: S = 12; binary tree:
 Output: [[1, 7, 4], [1, 9, 2]]
 Explanation: There are the two paths with sum '12' =>  1 -> 7 -> 4 and 1 -> 9 -> 2
 
@@ -42,11 +42,11 @@ class TreeNode:
 
 def find_paths(root, required_sum):
     allPaths = []
-    find_paths_recursive(root, required_sum, [], allPaths)
+    find_paths_equalToSum(root, required_sum, [], allPaths)
     return allPaths
 
 
-def find_paths_recursive(currentNode, required_sum, currentPath, allPaths):
+def find_paths_equalToSum(currentNode, required_sum, currentPath, allPaths):
     if currentNode is None:
         return
 
@@ -58,9 +58,9 @@ def find_paths_recursive(currentNode, required_sum, currentPath, allPaths):
         allPaths.append(list(currentPath))
     else:
         # traverse the left sub-tree
-        find_paths_recursive(currentNode.left, required_sum - currentNode.val, currentPath, allPaths)
+        find_paths_equalToSum(currentNode.left, required_sum - currentNode.val, currentPath, allPaths)
         # traverse the right sub-tree
-        find_paths_recursive(currentNode.right, required_sum - currentNode.val, currentPath, allPaths)
+        find_paths_equalToSum(currentNode.right, required_sum - currentNode.val, currentPath, allPaths)
 
     del currentPath[-1] # removes last value (from the right) from the list; same as using .pop()
 
