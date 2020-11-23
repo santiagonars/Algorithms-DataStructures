@@ -16,7 +16,8 @@ It doesn't matter what values are set beyond the returned length. """
 # NOTE: Time complexity => O(N)
 
 def removeDuplicates(nums):
-    # ALTERNATE: only the 2 lines below and seems faster in practice but it isnt
+    # ALTERNATE: only the 2 lines below and seems faster at first but once N is latger but it isnt 
+    # Time complexity => O(N*logN) to sort the array
     # s = set(nums)
     # nums[:] = sorted(s)
 
@@ -29,7 +30,7 @@ def removeDuplicates(nums):
             unique_values[n] = 0
         unique_values[n] += 1
         # save unique value for n as long as it there is more than 1 present in hashmap
-        if unique_values[n] <= 1:
+        if unique_values[n] == 1:
             new.append(n)      
     nums[:] = new
     print("new nums: ", nums)
@@ -37,6 +38,6 @@ def removeDuplicates(nums):
 
 if __name__ == "__main__":
     arraytest1 = [1,1,2] 
-    print(removeDuplicates(arraytest1)) # expected output = 9 | new nums = [1,2] 
+    print(removeDuplicates(arraytest1)) # expected output = 2 | new nums = [1,2] 
     arraytest2 = [0,0,1,1,1,2,2,3,3,4]
-    print(removeDuplicates(arraytest2)) # expected output = 9 | new nums = [0,1,2,3,4]
+    print(removeDuplicates(arraytest2)) # expected output = 5 | new nums = [0,1,2,3,4]
