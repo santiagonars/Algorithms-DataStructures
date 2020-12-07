@@ -5,6 +5,8 @@ Arrays and Strings:
     - String Compression (Bloomberg)
     - Valid Palindrome (Bloomberg)
     - Longest Palindromic Substring
+    - First Unique Character in a String
+    - Two Sum
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
