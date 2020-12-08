@@ -8,6 +8,7 @@ Arrays and Strings:
     - First Unique Character in a String
     - Valid Palindrome (Bloomberg)
     - Two Sum
+    - Valid Anagram
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
