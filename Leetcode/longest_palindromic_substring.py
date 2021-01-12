@@ -27,19 +27,19 @@ def longestPalindrome(s):
     start = 0
 
     for i in range(len(s)):
-        maxlen, start = expandFromCenter(s, i, i, maxlen, start) # covers case #1 (even) -> "aabbaa"
-        maxlen, start = expandFromCenter(s, i, i+1, maxlen, start) # covers case #2 -> (odd)"racecar"
+        maxlen, start = expandFromCenter(s, i, i, maxlen, start) # covers case #1 (odd) -> "racecar"
+        maxlen, start = expandFromCenter(s, i, i+1, maxlen, start) # covers case #2 (even) -> "aabbaa"
     return s[start:start+maxlen]
 
 
 def expandFromCenter(s, left, right, maxlen, start):
     while left >= 0 and right < len(s) and s[left] == s[right]:
-        left -= 1
-        right += 1
+        left -= 1 
+        right += 1 
 
     if maxlen < right - left - 1:
-        maxlen = right - left - 1
-        start = left + 1
+        maxlen = right - left - 1 
+        start = left + 1  
     
     return maxlen, start
 
@@ -49,7 +49,7 @@ def main():
     s = "cbbd"
     print(longestPalindrome(s)) # expected = "bb"
     s = "a"
-    print(longestPalindrome(s)) # expected = "a"  # NOTE: A single character is considered a palindrome
+    print(longestPalindrome(s)) # expected = "a"  # NOTE: A single character is considered a palindrome!
     s = "ac"
     print(longestPalindrome(s)) # expected = "a"
     
