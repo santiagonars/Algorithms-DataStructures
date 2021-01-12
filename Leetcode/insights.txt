@@ -6,9 +6,9 @@ Arrays and Strings:
     - Valid Palindrome (Bloomberg)
     - Longest Palindromic Substring
     - First Unique Character in a String
-    - Valid Palindrome (Bloomberg)
     - Two Sum
     - Valid Anagram
+    - Group Anagram
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
