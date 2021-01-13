@@ -15,6 +15,7 @@ Linked List:
 --------------------------------------------------------------------------------------------------------------
 Trees and Graphs:
     - Validate Binary Search Tree (Bloomberg)
+    - Binary Tree Inorder Traversal
 --------------------------------------------------------------------------------------------------------------
 Heaps, Queue, Stack:
     - Meetings rooms 2 (Bloomberg)
