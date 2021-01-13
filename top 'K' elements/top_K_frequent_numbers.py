@@ -42,7 +42,7 @@ def find_k_frequent_numbers(nums, k):
     return topNumbers
 
 
-# ALTERNATIVE SOLUTION
+# ALTERNATIVE SOLUTION - BUG: for edge case => nums = [1,1,1,2,2,3], k = 2
 def find_k_frequent_numbers_2(nums, k):
     topNumbers = []
     num_freq = {}
