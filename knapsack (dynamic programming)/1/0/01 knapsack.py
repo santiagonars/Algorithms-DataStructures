@@ -149,15 +149,15 @@ def print_selected_elements(dp, weights, profits, capacity):
 
 
 def main():
-    # Brute-force solution
+    # Brute-force
     print(solve_knapsack_1([1, 6, 10, 16], [1, 2, 3, 5], 7)) # expected = 22
     print(solve_knapsack_1([1, 6, 10, 16], [1, 2, 3, 5], 6)) # expected = 17
     print()
-    # Top-down Dynamic Programming with Memoization solution
+    # Top-down Dynamic Programming with Memoization
     print(solve_knapsack_2([1, 6, 10, 16], [1, 2, 3, 5], 7)) # expected = 22
     print(solve_knapsack_2([1, 6, 10, 16], [1, 2, 3, 5], 6)) # expected = 17
     print()
-    # Bottom-up Dynamic Programming solution
+    # Bottom-up Dynamic Programming
     print(solve_knapsack_3([1, 6, 10, 16], [1, 2, 3, 5], 7)) # expected = 22
     print(solve_knapsack_3([1, 6, 10, 16], [1, 2, 3, 5], 6)) # expected = 17
 
