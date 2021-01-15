@@ -37,9 +37,9 @@ def expandFromCenter(s, left, right, maxlen, start):
         left -= 1 
         right += 1 
 
-    if maxlen < right - left - 1:
+    if maxlen < right - left - 1: # the '-1' is to adjust the right pointer's correct postion
         maxlen = right - left - 1 
-        start = left + 1  
+        start = left + 1  # the '+1' is to adjust the left pointer's correct postion
     
     return maxlen, start
 
