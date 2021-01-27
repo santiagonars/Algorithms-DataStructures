@@ -9,6 +9,7 @@ Arrays and Strings:
     - Two Sum
     - Valid Anagram
     - Group Anagram
+    - Set Matrix Zeroes
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
