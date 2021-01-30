@@ -1,15 +1,16 @@
 
 Arrays and Strings: 
-    - Longest Substring Without Repeating Characters (Bloomberg)
+    - Longest Substring Without Repeating Characters (Bloomberg, Facebook)
     - First Unique Character in a String (Bloomberg)
     - String Compression (Bloomberg)
-    - Valid Palindrome (Bloomberg)
-    - Longest Palindromic Substring
+    - Valid Palindrome (Bloomberg, Facebook)
+    - Longest Palindromic Substring (Facebook)
     - First Unique Character in a String
-    - Two Sum
+    - Two Sum 
     - Valid Anagram
-    - Group Anagram
+    - Group Anagram (Facebook)
     - Set Matrix Zeroes
+    - Move Zeroes (Facebook)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
