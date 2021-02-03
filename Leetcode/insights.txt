@@ -11,6 +11,7 @@ Arrays and Strings:
     - Group Anagram (Facebook)
     - Set Matrix Zeroes
     - Move Zeroes (Facebook)
+    - Merge Sorted Array (Facebook)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
