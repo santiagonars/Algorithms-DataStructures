@@ -74,16 +74,14 @@ def addBinary2(a, b):
 
 
 def main():
-    # a, b = "11", "1"
-    # print(addBinary(a, b)) # expect = "100"
-    
-    # a, b = "1010", "1011"
-    # print(addBinary(a, b)) # expect = "10101"
+    a, b = "11", "1"
+    print(addBinary(a, b)) # expect = "100"
+    a, b = "1010", "1011"
+    print(addBinary(a, b)) # expect = "10101"
 
     a, b = "11", "1"
     print(addBinary2(a, b)) # expect = "100"
-
-    # a, b = "1010", "1011"
-    # print(addBinary2(a, b)) # expect = "10101"
+    a, b = "1010", "1011"
+    print(addBinary2(a, b)) # expect = "10101"
 
 main()
