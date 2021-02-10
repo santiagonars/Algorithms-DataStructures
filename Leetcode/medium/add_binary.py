@@ -45,7 +45,7 @@ def addBinary(a, b):
     return sum
 
 # Time Complexity => O(max(N,M)) ,where N and M are the lengths of a and b respectively
-# Space Complexity => O(max(N,M)) for the asnwer
+# Space Complexity => O(max(N,M)) for the answer
 def addBinary2(a, b):
     n = max(len(a), len(b))
     a = a.zfill(n) # .zfill(length) fills the string with zeros up to the length that is passed
