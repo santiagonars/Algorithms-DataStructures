@@ -69,9 +69,9 @@ def generate_permutations_recursive(nums, index, currentPermutation, result):
 
 def main():
     # expected output = [1,3,5], [1,5,3], [3,1,5], [3,5,1], [5,1,3], [5,3,1]
-    print("Here are all the permutations: " + str(find_permutations([1, 3, 5])))
+    print("Permutations (optimized)  : " + str(find_permutations([1, 3, 5])))
     # expected output = [1,3,5], [1,5,3], [3,1,5], [3,5,1], [5,1,3], [5,3,1]
-    print("Here are all the permutations: " + str(generate_permutations([1, 3, 5])))
+    print("Permutations (recursively): " + str(generate_permutations([1, 3, 5])))
 
 
 main()
