@@ -20,8 +20,9 @@ Trees and Graphs:
     - Validate Binary Search Tree (Bloomberg)
     - Binary Tree Inorder Traversal
 --------------------------------------------------------------------------------------------------------------
-Backtracking:
-    - Letter Combinations of a Phone Number
+Backtracking / Recursion:
+    - Letter Combinations of a Phone Number (Facebook)
+    - Permutations (Facebook) -> use the recursive / insertion approach
 --------------------------------------------------------------------------------------------------------------
 Heaps, Queue, Stack:
     - Meetings rooms 2 (Bloomberg)
