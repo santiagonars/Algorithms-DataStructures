@@ -47,9 +47,7 @@ def find_root_to_leaf_path_numbers(currentNode, pathSum):
 
 # ALTERNATION SOLUTION:
 def find_sum_of_path_digits_2(root):
-    sum = 0
-    sum = find_path_sum_recursive(root, "", sum)
-    return sum
+    return find_path_sum_recursive(root, "", 0)
 
 
 def find_path_sum_recursive(currentNode, currentPath_digit, sum):
