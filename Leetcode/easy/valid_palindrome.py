@@ -37,9 +37,9 @@ def isPalindrome(s):
       x = ""
       diff = ord('a') - ord('A')
       for i in s:
-         if ord(i)>=ord('a') and ord(i)<=ord('z') or ord(i)>=ord("0") and ord(i)<=ord("9"):
+        if ord(i)>=ord('a') and ord(i)<=ord('z') or ord(i)>=ord("0") and ord(i)<=ord("9"):
             x+=i
-         elif ord(i)>=ord('A') and ord(i)<=ord('Z'):
+        elif ord(i)>=ord('A') and ord(i)<=ord('Z'):
             i = chr(diff+ord(i))
             x+=i
 
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     # Solution #2
     print(isPalindrome("A man, a plan, a canal: Panama")) # expected output = True
     print(isPalindrome("race a car")) # expected output = False
-
+    
 
 
