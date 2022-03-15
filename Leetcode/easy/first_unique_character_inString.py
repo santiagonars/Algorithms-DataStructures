@@ -11,7 +11,7 @@ s = "loveleetcode"
 return 2.
 
 Note: You may assume the string contains only lowercase English letters """
-# Time complexity => O(N) => O(N + N) = O(2N) which is asymptoticaly equivalent to O(N)
+# Time complexity => O(N) => O(N + N) = O(2N) which is asymptotically equivalent to O(N)
 # Space complexity => O(1) => where N can be up to 26 characters in the English alphabet
 
 # solution #1
