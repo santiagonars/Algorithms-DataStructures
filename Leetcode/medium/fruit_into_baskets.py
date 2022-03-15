@@ -43,7 +43,7 @@ def totalFruits(fruits):
             fruit_count_map[right_fruit] = 0
         fruit_count_map[right_fruit] += 1
 
-        while len(fruit_count_map) > 2: #length number of unque fruits must 2
+        while len(fruit_count_map) > 2: #length number of unique fruits must 2
             left_fruit = fruits[window_start]
             fruit_count_map[left_fruit] -= 1
 
