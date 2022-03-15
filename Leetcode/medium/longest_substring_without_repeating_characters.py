@@ -70,6 +70,30 @@ def find_longest_substring1(s):
     return max_length
 
 
+# def find_longest_substring(s):
+#     window_start = 0
+#     max_length = 0
+#     freq_char_map = {}
+
+#     for window_end in range(len(s)):
+#         char_right = s[window_end]
+
+#         if char_right not in freq_char_map:
+#             freq_char_map[char_right] = 0
+#         freq_char_map[char_right] += 1
+
+#         k = 1 # distict characters
+#         while freq_char_map[char_right] > k:
+#             left_char = s[window_start]
+#             freq_char_map[left_char] -= 1 
+#             if freq_char_map[left_char] == 0:
+#                 del freq_char_map[left_char]
+#             window_start += 1
+
+#         max_length = max(max_length, window_end - window_start + 1)
+#     return max_length
+
+
 def main():
     s = "abcabcbb"
     print(find_longest_substring(s)) # expected output = 3
@@ -82,5 +106,3 @@ def main():
 
 
 main()
-    
-
