@@ -12,6 +12,9 @@ Arrays and Strings:
     - Set Matrix Zeroes
     - Move Zeroes (Facebook)
     - Merge Sorted Array (Facebook)
+    - Fruits into basket (Google)
+    - Container with most water (Google)
+    - 3Sum (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
