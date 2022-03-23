@@ -15,6 +15,7 @@ Arrays and Strings:
     - Fruits into basket (Google)
     - Container with most water (Google)
     - 3Sum (Google)
+    - Two Sum II / twoSum_2 
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
