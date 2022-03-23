@@ -21,25 +21,25 @@ def threeSum(nums):
     #     return []
     triplets = []
     target = 0
-    triplet_frequency_map = {}
+    triplets_freq_map = {}
     nums.sort()
     for i in range(len(nums) - 2):
         comp_map = {}
         for j in range(i + 1, len(nums)):
             complement = target - nums[i] - nums[j]
             if complement in comp_map:
-                if (nums[i], nums[comp_map[complement]], nums[j]) not in triplet_frequency_map:
-                    triplet_frequency_map[( nums[i], nums[comp_map[complement]], nums[j] )] = 0
-                triplet_frequency_map[(nums[i], nums[comp_map[complement]], nums[j])] += 1
+                if (nums[i], nums[comp_map[complement]], nums[j]) not in triplets_freq_map:
+                    triplets_freq_map[( nums[i], nums[comp_map[complement]], nums[j] )] = 0
+                triplets_freq_map[(nums[i], nums[comp_map[complement]], nums[j])] += 1
 
-                if triplet_frequency_map[(nums[i], nums[comp_map[complement]], nums[j])] <= 1:
-                    triplets.append([ nums[i], nums[comp_map[complement]], nums[j] ])
+                if triplets_freq_map[(nums[i], nums[comp_map[complement]], nums[j])] <= 1:
+                    triplets.append( [nums[i], nums[comp_map[complement]], nums[j]] )
             else:
                 comp_map[nums[j]] = j      
 
     return triplets
     # Time: O(N ^ 2)
-    # Space: O(2N)
+    # Space: O(N)
 
 
 nums = [-1,0,1,2,-1,-4] # expected: [[-1,-1,2],[-1,0,1]]
