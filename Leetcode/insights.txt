@@ -16,6 +16,8 @@ Arrays and Strings:
     - Container with most water (Google)
     - 3Sum (Google)
     - Two Sum II / twoSum_2 
+    - Next Permutation (Google)
+    - Rotate Image (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
