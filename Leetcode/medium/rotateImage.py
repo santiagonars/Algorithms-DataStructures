@@ -57,7 +57,9 @@ def reflect(matrix): # reverse
     for i in range(n):
         for j in range(n // 2):
             matrix[i][j], matrix[i][-j - 1] = matrix[i][-j - 1], matrix[i][j]
-
+    # Time: O(M) - M is the number of cells in the grid
+    #            - Transposing and reversing has a cost of O(M) for each function for moving values of each cell
+    # Space: O(1)
 
 matrix = [[1,2,3],[4,5,6],[7,8,9]] 
 rotate(matrix) # expected output = [[7,4,1],[8,5,2],[9,6,3]]
