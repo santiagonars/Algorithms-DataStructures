@@ -18,6 +18,8 @@ Arrays and Strings:
     - Two Sum II / twoSum_2 
     - Next Permutation (Google)
     - Rotate Image (Google)
+    - Jump Game (Google)
+    - Plus One (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
