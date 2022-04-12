@@ -58,6 +58,8 @@ def minWindow(s, t):
     if min_length > len(s):
         return ""
     return s[substring_start:substring_start + min_length]
+    # Time: O(N + M)
+        # Space: O(M) to store the values of t in hash map
 
 s, t = "ADOBECODEBANC", "ABC"
 print(minWindow(s, t)) # expected: "BANC"
