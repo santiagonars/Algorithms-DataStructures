@@ -24,6 +24,7 @@ Arrays and Strings:
     - Read N Characters Given Read4 II - Call multiple times (Google)
     - Longest Substring with At Most Two Distinct Characters (Google)
     - Missing Ranges (Google)
+    - Next Closest Time (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
