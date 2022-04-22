@@ -25,6 +25,9 @@ Arrays and Strings:
     - Longest Substring with At Most Two Distinct Characters (Google)
     - Missing Ranges (Google)
     - Next Closest Time (Google)
+    - Expressive Words (Google)
+    - Find and Replace in String (Google)
+    - Maximize Distance to Closest Person (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
