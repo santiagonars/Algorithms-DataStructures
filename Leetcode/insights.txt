@@ -28,6 +28,7 @@ Arrays and Strings:
     - Expressive Words (Google)
     - Find and Replace in String (Google)
     - Maximize Distance to Closest Person (Google)
+    - Valid Parentheses (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
