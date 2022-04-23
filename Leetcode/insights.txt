@@ -43,7 +43,8 @@ Backtracking / Recursion:
     - Permutations (Facebook) -> use the recursive / insertion approach
 --------------------------------------------------------------------------------------------------------------
 Heaps, Queue, Stack:
-    - Meetings rooms 2 (Bloomberg)
+    - Merge k Sorted Lists (Google) 
+    - Meetings rooms 2 (Bloomberg, Google)
 --------------------------------------------------------------------------------------------------------------
 Sorting, and Searching:
     - Sort Characters by Frequency (Bloomberg)
