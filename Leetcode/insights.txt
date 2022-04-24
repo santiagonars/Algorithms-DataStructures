@@ -30,6 +30,7 @@ Arrays and Strings:
     - Maximize Distance to Closest Person (Google)
     - Valid Parentheses (Google)
     - Merge k Sorted Lists (Google)
+    - Backspace String Compare (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg)
