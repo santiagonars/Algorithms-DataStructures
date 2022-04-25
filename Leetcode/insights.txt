@@ -33,7 +33,7 @@ Arrays and Strings:
     - Backspace String Compare (Google)
 --------------------------------------------------------------------------------------------------------------
 Linked List:
-    - Add Two Numbers (Bloomberg)
+    - Add Two Numbers (Bloomberg, Google)
 --------------------------------------------------------------------------------------------------------------
 Trees and Graphs:
     - Validate Binary Search Tree (Bloomberg)
