@@ -1,8 +1,8 @@
-""" ----------Add Two Numbers----------
-Problem:
->>> You are given two non-empty linked lists representing two non-negative integers. 
+""" ---------- Add Two Numbers ----------
+You are given two non-empty linked lists representing two non-negative integers. 
 The digits are stored in reverse order, and each of their nodes contains a single digit. 
-Add the two numbers and return the sum as a linked list.
+>>> Add the two numbers and return the sum as a linked list.
+
 You may assume the two numbers do not contain any leading zero, except the number 0 itself. 
 
 Example 1:
@@ -32,12 +32,11 @@ class ListNode:
         self.val = val
         self.next = next
 
-# recursive solution - !!!changes the original linked list by linking it to a bunch of zeros
+""" ----- SOLUTION: RECURSION ; Changes the original linked list by linking it to a bunch of zeros ----- """
 def addTwoNumbers(l1, l2, c=0):
-
-    sum_ = l1.val + l2.val + c
+    sum_ = l1.val + l2.val + c 
     c = sum_ // 10
-    result_linkedList = ListNode(sum_ % 10)
+    result_linkedList = ListNode(sum_ % 10) 
     
     if (l1.next is not None or l2.next is not None or c != 0):
         if l1.next is None:
@@ -45,19 +44,19 @@ def addTwoNumbers(l1, l2, c=0):
         if l2.next is None:
             l2.next = ListNode(0)
         result_linkedList.next = addTwoNumbers(l1.next, l2.next, c)
-    
     return result_linkedList
+    # Time: 
 
-# alternative mathematical solution
-# BUG: 
-def addTwoNumbers_2(l1, l2):
+
+""" ----- SOLUTION: mathematical approac """
+# BUG: getting funky results
+def addTwoNumbers_alt(l1, l2):
         digit_num1, digit_num2 = l1, l2
-        result_before_head = ListNode()
+        result_before_head = ListNode(None)
         current = result_before_head
-        c = 0 # carry
+        carry = 0 
 
         while (digit_num1 is not None or digit_num2 is not None):
-
             if digit_num1 is not None:
                 x = digit_num1.val
             else:
@@ -67,18 +66,40 @@ def addTwoNumbers_2(l1, l2):
             else:
                 y = 0
 
-            sum_ = x + y + c
-            c = sum_ // 10
+            sum_ = x + y + carry
+            carry = sum_ // 10
             current.next = ListNode(sum_ % 10)
             current = current.next
 
             digit_num1 = digit_num1.next if digit_num1 else None
             digit_num2 = digit_num2.next if digit_num2 else None
 
-        if c > 0:
-            current.next = ListNode(c)
+        if carry > 0:
+            current.next = ListNode(carry)
 
         return result_before_head.next
+
+""" SOLUTION: own solution (slow)"""
+def addTwoNumbers_alt2(l1, l2):
+    num1, num2  = "", ""
+    while l1 or l2:
+        if l1:
+            c = str(l1.val)
+            num1 = c + num1
+            l1 = l1.next
+        if l2:
+            c = str(l2.val)
+            num2 = c + num2
+            l2 = l2.next
+        
+    res_num = str(int(num1) + int(num2))
+    res = pointer = ListNode(None)
+    for char in map(str,reversed(res_num)):
+        pointer.next = ListNode(char)
+        pointer = pointer.next
+    return res.next
+    # Time: O(N + K) where N is the number with most digits, and K are the number of digits in all the numbers 
+    # Space: O(K) to store for the resultant linked list, where K is the number of digits in result
 
 
 def main():
@@ -91,6 +112,8 @@ def main():
     l2.next.next = ListNode(4)
 
     result = addTwoNumbers(l1, l2)
+    # result = addTwoNumbers_alt(l1, l2)
+    # result = addTwoNumbers_alt2(l1, l2)
     print("Two numbers added result is: ") # expected output = [7,0,8]
     while result != None:
         print(str(result.val) + " ", end='')
@@ -110,6 +133,8 @@ def main():
     l4.next.next.next = ListNode(9)
 
     result = addTwoNumbers(l3, l4)
+    # result = addTwoNumbers_alt(l3, l4)
+    # result = addTwoNumbers_alt2(l3, l4)
     print("Two numbers added result is: ") # expected output = [8,9,9,9,0,0,0,1]
     while result != None:
         print(str(result.val) + " ", end='')
