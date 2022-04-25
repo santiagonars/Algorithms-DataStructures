@@ -34,6 +34,7 @@ Arrays and Strings:
 --------------------------------------------------------------------------------------------------------------
 Linked List:
     - Add Two Numbers (Bloomberg, Google)
+    - Remove Nth Node From End of List (Google)
 --------------------------------------------------------------------------------------------------------------
 Trees and Graphs:
     - Validate Binary Search Tree (Bloomberg)
