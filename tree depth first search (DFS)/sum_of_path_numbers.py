@@ -45,7 +45,7 @@ def find_root_to_leaf_path_numbers(currentNode, pathSum):
     return find_root_to_leaf_path_numbers(currentNode.left, pathSum) + find_root_to_leaf_path_numbers(currentNode.right, pathSum) 
     
 
-# ALTERNATION SOLUTION:
+# ALTERNATIVE SOLUTION:
 def find_sum_of_path_digits_2(root):
     return find_path_sum_recursive(root, "", 0)
 
