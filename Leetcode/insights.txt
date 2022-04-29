@@ -7,7 +7,7 @@ Arrays and Strings:
     - Longest Palindromic Substring (Facebook)
     - First Unique Character in a String
     - Two Sum 
-    - Valid Anagram
+    - Valid Anagram (Google)
     - Group Anagram (Facebook)
     - Set Matrix Zeroes
     - Move Zeroes (Facebook)
@@ -54,9 +54,11 @@ Heaps, Queue, Stack:
 --------------------------------------------------------------------------------------------------------------
 Sorting, and Searching:
     - Sort Characters by Frequency (Bloomberg)
+    - Valid Anagram (Google)
 --------------------------------------------------------------------------------------------------------------
 Dynamic Programming:
-    - 
+    - Split Array Largest Sum (Google)
+    - Fence Paint (Google)
 --------------------------------------------------------------------------------------------------------------
 Design:
     - 
