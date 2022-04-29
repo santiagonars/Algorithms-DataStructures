@@ -18,8 +18,6 @@ Output: "a"
 Example 4:
 Input: s = "ac"
 Output: "a" """
-# Time complexity => O(N^2) 
-# Space complexity => O(1)
 
 # Solution by 'expanding around the center'
 def longestPalindrome(s):
@@ -42,6 +40,8 @@ def expandFromCenter(s, left, right, maxlen, start):
         start = left + 1  # the '+1' is to adjust the left pointer's correct postion
     
     return maxlen, start
+    # Time complexity => O(N^2) 
+    # Space complexity => O(1)
 
 def main():
     s = "babad"
@@ -52,6 +52,8 @@ def main():
     print(longestPalindrome(s)) # expected = "a"  # NOTE: A single character is considered a palindrome!
     s = "ac"
     print(longestPalindrome(s)) # expected = "a"
+    # TIME: (N^2)
+    # SPACE: (1)
     
 
 
