@@ -59,6 +59,8 @@ Sorting, and Searching:
 Dynamic Programming:
     - Split Array Largest Sum (Google)
     - Fence Paint (Google)
+    - Best Time to Buy and Sell Stock (Google)
+    - Maximal Rectangle (Google)
 --------------------------------------------------------------------------------------------------------------
 Design:
     - 
