@@ -43,7 +43,7 @@ class SolutionHeapq:
     def mergedKLists(self, lists):
         h = [(l.val, idx) for idx, l in enumerate(lists) if l]
         heapq.heapify(h) # turn h into a min heap
-        head = cur = ListNode(None)
+        head = cur = ListNode()
 
         while h:
             val, idx = heapq.heappop(h)
