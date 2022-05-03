@@ -57,6 +57,7 @@ Heaps, Queue, Stack:
 Sorting, and Searching:
     - Sort Characters by Frequency (Bloomberg)
     - Valid Anagram (Google)
+    - Find First and Last Position of Element in Sorted Array (Google)
 --------------------------------------------------------------------------------------------------------------
 Dynamic Programming:
     - Split Array Largest Sum (Google)
