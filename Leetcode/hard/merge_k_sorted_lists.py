@@ -36,7 +36,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-""" ---------- SOLUTION: Optomizes using a Priority Queue using heapq ---------- """
+""" ---------- SOLUTION: Optimizes using a Priority Queue using heapq ---------- """
 import heapq
 
 class SolutionHeapq:
