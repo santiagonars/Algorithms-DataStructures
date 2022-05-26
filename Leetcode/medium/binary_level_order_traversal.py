@@ -27,26 +27,26 @@ class TreeNode:
 
 
 """ ----- SOLUTION: Recursion with BFS (Breath-First Search) ----- """
-# def levelOrder(root):
-#     levels = []
-#     if not root:
-#         return levels
+def levelOrder(root):
+    levels = []
+    if not root:
+        return levels
     
-#     def helper(node, level):
-#         if len(levels) == level:
-#             levels.append([])
+    def helper(node, level):
+        if len(levels) == level:
+            levels.append([])
             
-#         levels[level].append(node.val)
+        levels[level].append(node.val)
         
-#         if node.left:
-#             helper(node.left, level + 1)
-#         if node.right:
-#             helper(node.right, level + 1)
+        if node.left:
+            helper(node.left, level + 1)
+        if node.right:
+            helper(node.right, level + 1)
             
-#     helper(root, 0)
-#     return levels
-#     # TIME: O(N)
-#     # SPACE: O(N)
+    helper(root, 0)
+    return levels
+    # TIME: O(N)
+    # SPACE: O(N)
 
 """ ----- SOLUTION: Iteration using a Queue ----- """
 from collections import deque

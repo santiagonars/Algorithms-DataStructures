@@ -76,18 +76,18 @@ class TreeNode:
 
 
 """ ----- SOLUTION: Recursive Traversal with Valid Range ----- """
-# def isValidBST(root):
-#     def validate(node, lower=-math.inf, upper=math.inf):
-#         if node is None:
-#             return True
+def isValidBST(root):
+    def validate(node, lower=-math.inf, upper=math.inf):
+        if node is None:
+            return True
         
-#         if node.val <= lower or node.val >= upper:
-#             return False
-#         return (validate(node.left, lower, node.val)) and (validate(node.right, node.val, upper))
+        if node.val <= lower or node.val >= upper:
+            return False
+        return (validate(node.left, lower, node.val)) and (validate(node.right, node.val, upper))
 
-#     return validate(root)
-#     # O(N) time for recursive call for every node
-#     # O(N) space to store the calls the calls of the entire tree
+    return validate(root)
+    # O(N) time for recursive call for every node
+    # O(N) space to store the calls the calls of the entire tree
 
 
 """ ----- SOLUTION: Iterative Traversal with Valid Range -----

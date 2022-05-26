@@ -17,29 +17,29 @@ Explanation: You will always arrive at index 3 no matter what.
 
 
 """ -------- Approach 1: Backtracking -------- """
-# def canJump(nums):
-#     return canJump_from_position(0, nums)         
+def canJump(nums):
+    return canJump_from_position(0, nums)         
 
-# def canJump_from_position(position, nums):
-#     if position == len(nums) - 1:
-#         return True
+def canJump_from_position(position, nums):
+    if position == len(nums) - 1:
+        return True
     
-#     furthest_jump = min(position + nums[position], len(nums) - 1)
+    furthest_jump = min(position + nums[position], len(nums) - 1)
 
-#     # NOTE: checking next_position from right to left might make a small improve, though theoretical it is the same
-#     for next_position in range(furthest_jump, position, -1):
-#     # for next_position in range(position + 1, furthest_jump + 1):
-#         if canJump_from_position(next_position, nums):
-#             return True
-#     return False
-#     # Time: O(2 ^ N). There are 2^N (upper bound) ways to jump from the first position to the last,
-#     #                 where is the length of array `nums`
-#     # Space: O(N). Recursion needs additional memory for stack frames
+    # NOTE: checking next_position from right to left might make a small improve, though theoretical it is the same
+    for next_position in range(furthest_jump, position, -1):
+    # for next_position in range(position + 1, furthest_jump + 1):
+        if canJump_from_position(next_position, nums):
+            return True
+    return False
+    # Time: O(2 ^ N). There are 2^N (upper bound) ways to jump from the first position to the last,
+    #                 where is the length of array `nums`
+    # Space: O(N). Recursion needs additional memory for stack frames
 
 
 """ -------- Approach 2: Dynamic Programming Top-down -------- """
 # not as a class
-""" memo = {}
+memo = {}
 def canJump(nums):
     for index in range(len(nums)):
         memo[index] = 'UNKNOWN'
@@ -60,7 +60,7 @@ def canJump_from_position(position, nums):
     return False
 
 print(canJump(nums=[2,3,1,1,4])) # expected output: True
-print(canJump(nums=[3,2,1,0,4])) # expected output: False """
+print(canJump(nums=[3,2,1,0,4])) # expected output: False
 
 # implemented as a class
 class TopDownSolution:
